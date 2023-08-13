@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3766522A880C67004309A3 /* TipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3766512A880C67004309A3 /* TipManager.swift */; };
 		DF8F4AC92A87B524002FD7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F4AC82A87B524002FD7A7 /* AppDelegate.swift */; };
 		DF8F4ACB2A87B524002FD7A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F4ACA2A87B524002FD7A7 /* SceneDelegate.swift */; };
 		DF8F4ACD2A87B524002FD7A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F4ACC2A87B524002FD7A7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF3766512A880C67004309A3 /* TipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipManager.swift; sourceTree = "<group>"; };
 		DF8F4AC52A87B524002FD7A7 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8F4AC82A87B524002FD7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF8F4ACA2A87B524002FD7A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF3766502A880BEE004309A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF8F4ACE2A87B524002FD7A7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF3766532A880C6D004309A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF3766512A880C67004309A3 /* TipManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF3766542A880C77004309A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF8F4ACC2A87B524002FD7A7 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		DF8F4ABC2A87B524002FD7A7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +84,12 @@
 			children = (
 				DF8F4AC82A87B524002FD7A7 /* AppDelegate.swift */,
 				DF8F4ACA2A87B524002FD7A7 /* SceneDelegate.swift */,
-				DF8F4ACC2A87B524002FD7A7 /* ViewController.swift */,
-				DF8F4ACE2A87B524002FD7A7 /* Main.storyboard */,
+				DF3766542A880C77004309A3 /* Controllers */,
+				DF3766502A880BEE004309A3 /* Views */,
 				DF8F4AD12A87B525002FD7A7 /* Assets.xcassets */,
 				DF8F4AD32A87B525002FD7A7 /* LaunchScreen.storyboard */,
 				DF8F4AD62A87B525002FD7A7 /* Info.plist */,
+				DF3766532A880C6D004309A3 /* Models */,
 			);
 			path = Tipsy;
 			sourceTree = "<group>";
@@ -141,6 +168,7 @@
 				DF8F4ACD2A87B524002FD7A7 /* ViewController.swift in Sources */,
 				DF8F4AC92A87B524002FD7A7 /* AppDelegate.swift in Sources */,
 				DF8F4ACB2A87B524002FD7A7 /* SceneDelegate.swift in Sources */,
+				DF3766522A880C67004309A3 /* TipManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
