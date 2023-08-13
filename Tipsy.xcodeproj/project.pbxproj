@@ -10,10 +10,11 @@
 		DF3766522A880C67004309A3 /* TipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3766512A880C67004309A3 /* TipManager.swift */; };
 		DF8F4AC92A87B524002FD7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F4AC82A87B524002FD7A7 /* AppDelegate.swift */; };
 		DF8F4ACB2A87B524002FD7A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F4ACA2A87B524002FD7A7 /* SceneDelegate.swift */; };
-		DF8F4ACD2A87B524002FD7A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F4ACC2A87B524002FD7A7 /* ViewController.swift */; };
+		DF8F4ACD2A87B524002FD7A7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F4ACC2A87B524002FD7A7 /* CalculatorViewController.swift */; };
 		DF8F4AD02A87B524002FD7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8F4ACE2A87B524002FD7A7 /* Main.storyboard */; };
 		DF8F4AD22A87B525002FD7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8F4AD12A87B525002FD7A7 /* Assets.xcassets */; };
 		DF8F4AD52A87B525002FD7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8F4AD32A87B525002FD7A7 /* LaunchScreen.storyboard */; };
+		DFC6A52B2A896013006DBA23 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC6A52A2A896013006DBA23 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		DF8F4AC52A87B524002FD7A7 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8F4AC82A87B524002FD7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF8F4ACA2A87B524002FD7A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF8F4ACC2A87B524002FD7A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF8F4ACC2A87B524002FD7A7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		DF8F4ACF2A87B524002FD7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF8F4AD12A87B525002FD7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8F4AD42A87B525002FD7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF8F4AD62A87B525002FD7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC6A52A2A896013006DBA23 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 		DF3766542A880C77004309A3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DF8F4ACC2A87B524002FD7A7 /* ViewController.swift */,
+				DF8F4ACC2A87B524002FD7A7 /* CalculatorViewController.swift */,
+				DFC6A52A2A896013006DBA23 /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,7 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8F4ACD2A87B524002FD7A7 /* ViewController.swift in Sources */,
+				DFC6A52B2A896013006DBA23 /* ResultViewController.swift in Sources */,
+				DF8F4ACD2A87B524002FD7A7 /* CalculatorViewController.swift in Sources */,
 				DF8F4AC92A87B524002FD7A7 /* AppDelegate.swift in Sources */,
 				DF8F4ACB2A87B524002FD7A7 /* SceneDelegate.swift in Sources */,
 				DF3766522A880C67004309A3 /* TipManager.swift in Sources */,
