@@ -15,9 +15,14 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var twentyPercentTipButton: UIButton!
     @IBOutlet weak var personCountLabel: UILabel!
     
+    var tipManager = TipManager()
+    
+    var tipPercent = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
 
     @IBAction func tipButtonPressed(_ sender: UIButton) {
@@ -26,10 +31,22 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func stepperPressed(_ sender: UIStepper) {
+        personCountLabel.text = String(format: "%.0f", sender.value)
+    }
+    @IBAction func doneEditingTextField(_ sender: UITextField) {
+        self.view.endEditing(true)
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton){
+        guard let priceInputText = billTotalTextField.text else {return}
+        guard let priceInputToFloat = Float(priceInputText) else {return}
         
+        
+        guard let personCount = Int(personCountLabel.text!) else {return}
+        
+        tipManager.calculateTipPerPerson(totalPrice: priceInputToFloat, personCount: personCount, tipPercent: tipPercent)
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
     func toggleStyling(title : String) {
@@ -46,6 +63,7 @@ class CalculatorViewController: UIViewController {
             tenPercentTipButton.tintColor = darkPurple
             twentyPercentTipButton.backgroundColor = transparent
             twentyPercentTipButton.tintColor = darkPurple
+            tipPercent = 0
         case "%10":
             tenPercentTipButton.tintColor = white
             tenPercentTipButton.backgroundColor = darkPurple
@@ -53,6 +71,7 @@ class CalculatorViewController: UIViewController {
             zeroPercentTipButton.tintColor = darkPurple
             twentyPercentTipButton.backgroundColor = transparent
             twentyPercentTipButton.tintColor = darkPurple
+            tipPercent = 10
         default:
             twentyPercentTipButton.tintColor = white
             twentyPercentTipButton.backgroundColor = darkPurple
@@ -60,7 +79,30 @@ class CalculatorViewController: UIViewController {
             zeroPercentTipButton.tintColor = darkPurple
             tenPercentTipButton.backgroundColor = transparent
             tenPercentTipButton.tintColor = darkPurple
+            tipPercent = 20
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            // transfer the relevant data to next screen
+            let destinationViewController = segue.destination as! ResultViewController
+            destinationViewController.info = tipManager.getInfo()
+            destinationViewController.pricePerPerson = tipManager.getPricePerPerson()
+        }
+    }
+}
+
+// extension to hide number pad after input
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 

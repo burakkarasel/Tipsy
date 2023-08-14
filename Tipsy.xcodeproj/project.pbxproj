@@ -15,6 +15,7 @@
 		DF8F4AD22A87B525002FD7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8F4AD12A87B525002FD7A7 /* Assets.xcassets */; };
 		DF8F4AD52A87B525002FD7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8F4AD32A87B525002FD7A7 /* LaunchScreen.storyboard */; };
 		DFC6A52B2A896013006DBA23 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC6A52A2A896013006DBA23 /* ResultViewController.swift */; };
+		DFF997BA2A8A0CB80087A3B7 /* TipResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF997B92A8A0CB80087A3B7 /* TipResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DF8F4AD42A87B525002FD7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF8F4AD62A87B525002FD7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC6A52A2A896013006DBA23 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DFF997B92A8A0CB80087A3B7 /* TipResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				DF3766512A880C67004309A3 /* TipManager.swift */,
+				DFF997B92A8A0CB80087A3B7 /* TipResult.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF997BA2A8A0CB80087A3B7 /* TipResult.swift in Sources */,
 				DFC6A52B2A896013006DBA23 /* ResultViewController.swift in Sources */,
 				DF8F4ACD2A87B524002FD7A7 /* CalculatorViewController.swift in Sources */,
 				DF8F4AC92A87B524002FD7A7 /* AppDelegate.swift in Sources */,

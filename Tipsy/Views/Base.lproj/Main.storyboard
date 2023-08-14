@@ -94,7 +94,7 @@
                                                         <color key="textColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-Ai-R6k">
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-Ai-R6k">
                                                         <rect key="frame" x="67.333333333333343" y="0.0" width="94" height="32"/>
                                                         <connections>
                                                             <action selector="stepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="cGY-dI-zh3"/>
@@ -142,6 +142,9 @@
                                         <color key="textColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="doneEditingTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YEE-hE-iHK"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
